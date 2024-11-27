@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes/Tips</title>
+    <link rel="stylesheet" href="styles-quotes.css">
+    <script>
+        function searchQuotes() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let quotes = document.getElementsByClassName('quote-tip');
+
+            for (let i = 0; i < quotes.length; i++) {
+                if (quotes[i].textContent.toLowerCase().includes(input)) {
+                    quotes[i].style.display = '';
+                } else {
+                    quotes[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Quotes/Tips</h1>
+        <div class="nav-container">
+        <img src="cancerribbon.png" alt="School Logo" class="header-img">
+        <nav>
+            <a href="index.html" class="button">Welcome</a>
+            <a href="classes.html" class="button">Classes</a>
+            <a href="teachers.html" class="button">Teachers</a>
+        </nav>
+        </div>
+    </header>
+    <div class="content">
+        <input type="text" id="searchInput" onkeyup="searchQuotes()" placeholder="Search for quotes/tips.." class="search-box">
+        
+
+        <h2>Tips from Breast Cancer survivors</h2>
+        <table class="quote-table">
+            <thead>
+                <tr>
+                    <th>Health</th>
+                    <th>Social Life</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="quote-tip">
+                    <td>Kristin, Survivor of Stage 2 Breast Cancer - "Exercise helped me both mentally and physically. After finishing treatment, I started walking every day and gradually increased my activity level. It helped me regain strength, reduce stress, and improve my mood. I also joined a support group for cancer survivors, which provided me with invaluable emotional support."</td>
+                    <td>Susan, Survivor of Stage 2 Breast Cancer - "It was important for me to stay connected with friends and family throughout my treatment. I made sure to schedule regular check-ins, whether it was a quick phone call or a coffee outing. It helped me feel grounded and supported."                    </td>
+                </tr>
+                <tr class="quote-tip">
+                    <td>Nancy, Survivor of Stage 3 Breast Cancer - "I focused on nutrition throughout my treatment and recovery. I made sure to eat plenty of leafy greens, fruits, and lean proteins. I even started making my own smoothies to ensure I was getting enough nutrients. Avoiding processed foods was key for me, especially sugar, which can contribute to inflammation."                    </td>
+                    <td>Karen, Survivor of Stage 1 Breast Cancer - "I focused on quality, not quantity, when it came to socializing. I spent time with close friends who understood what I was going through. I also joined a cancer support group, which allowed me to bond with others who shared similar experiences."</td>
+                </tr>
+                <tr class="quote-tip">
+                    <td>Amy, Survivor of Stage 1 Breast Cancer - "Sleep was a big challenge for me, especially after chemotherapy. I created a calming bedtime routine, including reading a book and doing some light stretches. It made a big difference in improving my quality of sleep and reducing night sweats."</td>
+                    <td>Emily, Survivor of Stage 3 Breast Cancer - "During treatment, I felt isolated at times, so I leaned on technology to stay connected. Virtual meet-ups with friends and family became a lifeline for me. We did virtual game nights, cooking lessons, and even book clubs, which kept me socially engaged."</td>
+                </tr>
+                <tr class="quote-tip">
+                    <td>Monica, Survivor of Stage 4 Breast Cancer - "Managing stress was vital for me during and after treatment. I practiced meditation and deep breathing exercises. I also tried journaling and found it incredibly helpful for processing my emotions and dealing with anxiety."</td>
+                    <td>Janet, Survivor of Stage 4 Breast Cancer - "I made sure to communicate openly with my loved ones about my needs and boundaries. Sometimes I just wanted company, but other times I needed time alone. Setting clear expectations helped me maintain strong relationships and prevented any feelings of guilt or misunderstanding."</td>
+                </tr>
+                <tr class="quote-tip">
+                    <td>Catherine, Survivor of Stage 3 Breast Cancer - "I really listened to my body. If I felt tired, I allowed myself to rest. Cancer treatment is tough, and I learned not to push myself too hard. It's okay to take breaks and ask for help when needed. Your body needs time to heal."</td>
+                    <td>
+                        Patricia, Survivor of Stage 2 Breast Cancer - "I took small steps to reintegrate into social settings after my treatment. I started with one-on-one meetups and gradually worked my way up to larger gatherings. It was important to give myself permission to take things at my own pace."
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Mental Health</h2>
+        <table class="quote-table">
+            <tbody>
+                <tr class="quote-tip"><td>Sarah, Survivor of Stage 2 Breast Cancer - "Therapy was incredibly helpful for me. I started seeing a counselor during my treatment to help process the emotions that came with my diagnosis. Talking to someone who could help me work through my fears and anxiety was essential in maintaining my mental health."</td></tr>
+                <tr class="quote-tip"><td>Linda, Survivor of Stage 3 Breast Cancer - "Mindfulness and meditation became part of my daily routine. I practiced deep breathing exercises and spent a few minutes each day focusing on the present. It helped me reduce anxiety and feel more grounded, especially when I was overwhelmed by treatment."</td></tr>
+                <tr class="quote-tip"><td>Tina, Survivor of Stage 1 Breast Cancer - "I made sure to stay positive, but I also allowed myself to feel my emotions. It's okay to cry, feel frustrated, or scared. Embracing all emotions, not just the positive ones, helped me process everything I was going through and accept that it was part of my healing journey."                </td></tr>
+                <tr class="quote-tip"><td>Jill, Survivor of Stage 2 Breast Cancer - "I kept a journal during treatment. Writing down my thoughts and feelings gave me a space to express what I was experiencing, without feeling judged or misunderstood. It helped me process my emotions and track my progress, which was a great way to reflect."                </td></tr>
+                <tr class="quote-tip"><td>Rachel, Survivor of Stage 4 Breast Cancer - "Support groups were a huge part of my mental health. I joined a group of women who were going through similar struggles, and it gave me a sense of community. Sharing experiences and hearing others' stories helped me feel less isolated and more hopeful."</td></tr>
+                <tr class="quote-tip"><td>Megan, Survivor of Stage 3 Breast Cancer - "Exercise was essential for my mental well-being. Even light walking or yoga made a huge difference in reducing my anxiety and boosting my mood. It didn't have to be intense, but it gave me a sense of accomplishment and control."</td></tr>
+                <tr class="quote-tip"><td>Pamela, Survivor of Stage 2 Breast Cancer - "I took time to focus on hobbies that brought me joy before cancer. Whether it was painting, reading, or gardening, doing things I loved helped me feel connected to who I was before my diagnosis. It was a reminder that I was more than just a cancer patient."</td></tr>
+                <tr class="quote-tip"><td>Nancy, Survivor of Stage 1 Breast Cancer - "I practiced gratitude every day, even on the hardest days. I would list three things I was grateful for, no matter how small. It shifted my mindset from focusing on the negative to appreciating the positives in my life, which helped me feel more hopeful."</td></tr>
+                <tr class="quote-tip"><td>Cheryl, Survivor of Stage 2 Breast Cancer - "I found that staying connected with my loved ones helped combat loneliness and negative thoughts. Even if I didn't feel like talking, just being around family and friends who were there for me gave me comfort. Social support is so crucial during recovery."</td></tr>
+                <tr class="quote-tip"><td>Victoria, Survivor of Stage 4 Breast Cancer - "I learned to take things one day at a time. Focusing on the present moment helped me avoid feeling overwhelmed by the future. Setting small goals and celebrating small wins, like finishing a treatment session or getting through a tough day, helped me stay focused and positive."</td></tr>
+                <tr class="quote-tip"><td>Diana, Survivor of Stage 2 Breast Cancer - "I found it really helpful to give myself permission to take breaks from thinking about cancer. It's easy to get caught up in the medical appointments and the emotional rollercoaster, so I made a conscious effort to engage in activities that helped me feel 'normal' again—like watching my favorite shows, spending time with friends, or cooking a new recipe. Those moments of escape helped me recharge and maintain a healthier perspective."</td></tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
